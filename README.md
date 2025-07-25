@@ -17,7 +17,7 @@ This covers the fundamentals of HTML, preparing for deeper dives into CSS, JavaS
 Here you'll find direct links to the daily logs for quick access to specific day's notes and exercises.
 
 * **[Day 1: Introduction & Setup (July 24, 2025)](daily-logs/day-01-intro-setup/README.md)**
-* Day 2: Basic Content Structure
+* **[Day 2: Basic Content Structure (July 25, 2025)](daily-logs/day-02-basic-content/README.md)**
 * Day 3: Essential Tools & Linking
 * Day 4: More on Attributes & Images
 * Day 5: Graphics & Introduction to Forms
