@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linking Demo - Internal and External Links</title>
+    <meta name="description" content="A demonstration of internal, external, and anchor links in HTML.">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+
+    <!-- Moved the id="top" to the h1 tag for better semantic placement -->
+    <h1 id="top">Exploring Hyperlinks in HTML</h1>
+
+    <p>Hyperlinks (`<a>` tags) are fundamental to the web, connecting different pages and resources.</p>
+
+    <h2>External Links</h2>
+    <p>
+        External links take you to websites outside of the current domain. It's good practice to open these in a new tab.
+    </p>
+    <ul>
+        <li>
+            Visit <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a> (opens in a new tab).
+            <br>
+            `target="_blank"` opens the link in a new browser tab.
+            <br>
+            `rel="noopener noreferrer"` is a security measure recommended when using `target="_blank"`.
+        </li>
+        <li>
+            Learn more on <a href="https://en.wikipedia.org/wiki/Hyperlink" target="_blank" rel="noopener noreferrer">Wikipedia's Hyperlink page</a>.
+        </li>
+    </ul>
+
+    <h2>Internal Links</h2>
+    <p>
+        Internal links take you to other pages within the same website.
+    </p>
+    <ul>
+        <li>Go to our <a href="about.html">About Us page</a>.</li>
+        <li>Visit the <a href="products.html">Products section</a>.</li>
+        <li>Access the <a href="contact.html">Contact Us page</a>.</li>
+    </ul>
+    <p>
+        (Remember: For these to work, `about.html`, `products.html`, and `contact.html` must be in the same folder.)
+    </p>
+
+    <h2>Internal Anchor Links (Same Page Navigation)</h2>
+    <p>
+        Anchor links allow you to jump to specific sections within the *current* page.
+        Click these links and observe how the page scrolls to the corresponding section.
+    </p>
+    <ul>
+        <li><a href="#section1">Jump to Section 1: What is HTML?</a></li>
+        <li><a href="#section2">Jump to Section 2: Types of Links</a></li>
+        <li><a href="#section3">Jump to Section 3: Best Practices</a></li>
+        <li><a href="#top">Back to Top of Page</a></li>
+    </ul>
+
+    <hr> <!-- Thematic break -->
+
+    <h3 id="section1">Section 1: What is HTML?</h3>
+    <p>
+        HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p><a href="#top">Back to top</a></p>
+
+
+    <h3 id="section2">Section 2: Types of Links</h3>
+    <p>
+        As demonstrated on this page, there are primarily three types of links commonly used:
+    </p>
+    <ol>
+        <li>**External Links:** Point to resources on different websites.</li>
+        <li>**Internal Links:** Point to different pages within the same website.</li>
+        <li>**Anchor Links (or Fragment Identifiers):** Point to a specific location (an element with an `id`) within the same document or another document.</li>
+    </ol>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p><a href="#top">Back to top</a></p>
+
+
+    <h3 id="section3">Section 3: Best Practices</h3>
+    <p>
+        When creating links, consider the following best practices:
+    </p>
+    <ul>
+        <li>Use descriptive link text that clearly indicates the destination.</li>
+        <li>Ensure `target="_blank"` is accompanied by `rel="noopener noreferrer"` for security.</li>
+        <li>Validate your link paths to avoid broken links.</li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p><a href="#top">Back to top</a></p>
+
+</body>
+</html>
