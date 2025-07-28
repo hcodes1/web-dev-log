@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes Demo</title>
+</head>
+<body>
+
+    <h1>HTML Attributes</h1>
+
+    <p>Attributes give us more control and detail about HTML elements. Here are some examples:</p>
+   
+    <h2>Anchor Tag (<a>) with href and target attributes:</h2>
+    <p>
+        The `href` attribute specifies the URL the link goes to.<br>
+        The `target` attribute specifies where to open the linked document (e.g., `_blank` opens in a new tab).
+    </p>
+    <a href="https://www.google.com" target="_blank">Visit Google in a new tab</a>
+
+    <h2>Input Tag (<input>) with type, id, and name attributes:</h2>
+    <p>
+        The `type` attribute defines the type of input (e.g., `text`, `email`, `password`).<br>
+        The `id` attribute provides a unique identifier for the element, useful for CSS and JavaScript.<br>
+        The `name` attribute is used when submitting form data.
+    </p>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username_input" placeholder="Enter your username">
+    <br><br>
+    <label for="useremail">Email:</label>
+    <input type="email" id="useremail" name="email_input" placeholder="Enter your email">
+
+    <h2>Paragraph Tag (<p>) with id attribute:</h2>
+    <p>
+        The `id` attribute can be used on almost any HTML element to give it a unique identifier.
+    </p>
+    <p id="introduction-paragraph">This is a paragraph with a unique ID.</p>
+
+    <h1>Self-Closing Tags: No Closing Tag Needed</h1>
+
+    <p>Some HTML elements are "self-closing" because they don't enclose any content. They simply represent a single point or object.</p>
+
+    <h2>Image Tag (<img>):</h2>
+    <p>
+        As seen above, the `<img>` tag is self-closing because the image content is external and referenced by the `src` attribute.
+    </p>
+    <img src="https://via.placeholder.com/100" alt="A smaller placeholder image" width="100">
+
+    <h2>Line Break Tag (<br>):</h2>
+    <p>
+        The `<br>` tag creates a line break, forcing the content after it to start on a new line.<br>
+        This is a line of text.<br>And this is another line after a break.
+    </p>
+
+    <h2>Horizontal Rule Tag (<hr>):</h2>
+    <p>
+        The `<hr>` tag creates a horizontal line, often used to separate content visually.
+    </p>
+    <hr>
+    <p>Content below the horizontal rule.</p>
+
+</body>
+</html>
