@@ -20,7 +20,7 @@ Here you'll find direct links to the daily logs for quick access to specific day
 * **[Day 2: Basic Content Structure (July 25, 2025)](daily-logs/day-02-basic-content/README.md)**
 * **[Day 3: Essential Tools & Linking (July 26, 2025)](daily-logs/day-03-tools-linking/README.md)**
 * **[Day 4: More on Attributes & Images (July 28, 2025)](daily-logs/day-04-attributes-images/README.md)**
-* Day 5: Graphics & Introduction to Forms
+* **[Day 5: Graphics & Introduction to Forms (July 29, 2025)](daily-logs/day-05-graphics-forms-intro/README.md)**
 * Day 6: Form Elements Deep Dive
 * Day 7: Form Actions & Validation
 * Day 8: Layout & Structure Fundamentals
