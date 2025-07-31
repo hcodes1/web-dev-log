@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Demo</title>
+    <meta name="description" content="An HTML-only demonstration of client-side form validation using 'required' and 'minlength' attributes.">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+
+    <h1>Client-Side Form Validation Demo</h1>
+
+    <p>
+        This form demonstrates basic HTML5 client-side validation using the `required` and `minlength` attributes.
+        Try submitting the form without filling all fields, or with too few characters, to see the browser's built-in validation messages.
+    </p>
+
+    <!--
+        The <form> element defines an HTML form for user input.
+        The 'action' attribute specifies where to send the form data when a form is submitted.
+        The 'method' attribute specifies the HTTP method (GET or POST) to be used when submitting the form data.
+        For this demo, '#' is used as a placeholder for the action.
+    -->
+    <form action="#" method="post">
+
+        <h2>User Information</h2>
+
+        <p>
+            <label for="username">Username:</label><br>
+            <!--
+                'required' attribute: Makes the input field mandatory. The form cannot be submitted
+                if this field is empty.
+                'minlength' attribute: Specifies the minimum number of characters required for the input's value.
+            -->
+            <input type="text" id="username" name="username" required minlength="4">
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label><br>
+            <!--
+                'type="email"' provides basic email format validation in addition to 'required'.
+            -->
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="password">Password:</label><br>
+            <!--
+                'type="password"' hides the input characters.
+                'minlength' is crucial for password strength requirements.
+            -->
+            <input type="password" id="password" name="password" required minlength="8">
+        </p>
+
+        <p>
+            <label for="age">Age:</label><br>
+            <!--
+                'type="number"' ensures only numerical input.
+                'required' makes it mandatory.
+                'min' and 'max' can also be used for number type inputs.
+            -->
+            <input type="number" id="age" name="age" required min="18" max="120">
+        </p>
+
+        <h2>Your Message</h2>
+
+        <p>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required minlength="5">
+        </p>
+
+        <p>
+            <label for="message">Your Message:</label><br>
+            <!--
+                'textarea' for multi-line text input.
+                'required' and 'minlength' apply here too.
+            -->
+            <textarea id="message" name="userMessage" rows="6" cols="50" required minlength="20"></textarea>
+        </p>
+
+        <h2>Preferences</h2>
+
+        <p>
+            <label for="contactReason">Reason for Contact:</label><br>
+            <!--
+                'required' on <select> ensures an option other than the default empty one is chosen.
+            -->
+            <select id="contactReason" name="contactReason" required>
+                <option value="">--Please select a reason--</option>
+                <option value="inquiry">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="feedback">Product Feedback</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+
+        <p>
+            <!--
+                For checkboxes, 'required' means the checkbox *must* be checked.
+                This is often used for "I agree to terms" checkboxes.
+            -->
+            <input type="checkbox" id="termsAgree" name="termsAgree" value="agreed" required>
+            <label for="termsAgree">I agree to the <a href="#">Terms and Conditions</a></label>
+        </p>
+
+        <p>
+            <button type="submit">Submit Form</button>
+        </p>
+
+    </form>
+
+</body>
+</html>

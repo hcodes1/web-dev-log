@@ -20,15 +20,15 @@
     <form action="#" method="post">
         <p>
             <label for="fullName">Your Name:</label><br>
-            <input type="text" name="fullName">
+            <input type="text" name="fullName" required>
         </p>
         <p>
             <label for="userEmail">Your Email: </label><br>
-            <input type="email" name="userEmail">
+            <input type="email" name="userEmail" required>
         </p>
         <p>
             <label for="message">Your Message</label><br>
-            <textarea id="message" name="userMessage" rows="5" cols="40"></textarea>
+            <textarea id="message" name="userMessage" rows="5" cols="40" required minlength="10"></textarea>
         </p>
         <p>
             <label for="contactReason">Reason for Contact:</label><br>
@@ -38,6 +38,23 @@
                 <option value="collaboration">Collaboration Opportunity</option>
                 <option value="other">Other</option>
             </select>
+        </p>
+
+        <p>
+            <strong>Preferred Contact Method:</strong><br>
+            <input type="radio" id="contactEmail" name="contactMethod" value="email">
+            <label for="contactEmail">Email</label><br>
+            <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+            <label for="contactPhone">Phone</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <label for="newsletter">Subscribe to my newsletter</label>
+        </p>
+
+        <p>
+            <button type="submit">Send Message</button>
         </p>
     </form>
 </body>

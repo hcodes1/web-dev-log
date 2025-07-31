@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkboxes and Radios Demo</title>
+    <meta name="description" content="An HTML-only demonstration of multiple choice (checkboxes) and single choice (radio buttons) input types.">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+
+    <h1>Input Choice Examples</h1>
+
+    <p>This page demonstrates how to use checkboxes for multiple selections and radio buttons for single selections.</p>
+
+    <h2>Select Your Favorite Colors (Choose all that apply):</h2>
+    <!--
+        <fieldset> groups related form controls.
+        <legend> provides a caption for the <fieldset>.
+        This is crucial for accessibility, as screen readers will announce the legend
+        before listing the controls within the fieldset.
+        Checkboxes allow users to select zero, one, or multiple options from a set.
+        Each checkbox typically has a unique 'id' but can share the same 'name' if
+        they are part of a conceptual group that can be submitted together (though
+        often they have distinct names if they represent independent boolean choices).
+        Here, they have the same 'name' 'colors' to show they are related choices.
+    -->
+    <fieldset>
+        <legend>Favorite Colors:</legend>
+        <p>
+            <input type="checkbox" id="colorRed" name="colors" value="red">
+            <label for="colorRed">Red</label><br>
+
+            <input type="checkbox" id="colorBlue" name="colors" value="blue">
+            <label for="colorBlue">Blue</label><br>
+
+            <input type="checkbox" id="colorGreen" name="colors" value="green">
+            <label for="colorGreen">Green</label><br>
+
+            <input type="checkbox" id="colorYellow" name="colors" value="yellow">
+            <label for="colorYellow">Yellow</label><br>
+        </p>
+    </fieldset>
+
+    <h2>Choose Your Preferred Operating System (Select One):</h2>
+    <!--
+        Radio buttons allow users to select exactly one option from a set of mutually exclusive choices.
+        All radio buttons in a group must have the *same* 'name' attribute. This is how the browser
+        knows they belong together and enforces the single-selection rule.
+        Each radio button must have a unique 'id' for its associated <label>.
+    -->
+    <fieldset>
+        <legend>Operating System:</legend>
+        <p>
+            <input type="radio" id="osWindows" name="operatingSystem" value="windows">
+            <label for="osWindows">Windows</label><br>
+
+            <input type="radio" id="osMacOS" name="operatingSystem" value="macos">
+            <label for="osMacOS">macOS</label><br>
+
+            <input type="radio" id="osLinux" name="operatingSystem" value="linux">
+            <label for="osLinux">Linux</label><br>
+
+            <input type="radio" id="osOther" name="operatingSystem" value="other">
+            <label for="osOther">Other</label><br>
+        </p>
+    </fieldset>
+
+    <h2>Notification Preferences (Yes/No with Checkbox):</h2>
+    <p>
+        <!-- A single checkbox often represents a boolean (yes/no) choice. -->
+        <input type="checkbox" id="emailNotifications" name="emailNotifications" value="yes">
+        <label for="emailNotifications">Receive email notifications</label>
+    </p>
+
+    <p>
+        <button type="submit">Submit Choices</button>
+    </p>
+
+</body>
+</html>
