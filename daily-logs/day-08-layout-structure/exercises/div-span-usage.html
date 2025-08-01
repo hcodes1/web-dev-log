@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div and Span Usage Demo</title>
+    <meta name="description" content="An HTML-only demonstration of how to group content using generic block-level (div) and inline-level (span) elements.">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+
+    <h1>Grouping Content with &lt;div&gt; and &lt;span&gt;</h1>
+
+    <p>
+        The `&lt;div&gt;` and `&lt;span&gt;` elements are generic containers used for grouping content. They don't have
+        inherent semantic meaning but are crucial for applying styles or JavaScript to specific sections of content.
+    </p>
+
+    <hr>
+
+    <h2>Using &lt;div&gt; for Block-Level Grouping</h2>
+    <p>
+        A `&lt;div&gt;` is a block-level element. This means it will always start on a new line and take up the full available width,
+        acting like a distinct block of content on the page. It's ideal for grouping larger sections or components.
+    </p>
+
+    <!--
+        This div groups a "product card" like section.
+        It will create a block that separates this content from surrounding elements.
+    -->
+    <div>
+        <h3>Product Feature: SuperWidget Pro</h3>
+        <p>
+            The SuperWidget Pro offers unparalleled performance and durability.
+            It's designed for professionals who demand the best.
+        </p>
+        <p>
+            Key features include:
+            <ul>
+                <li>Advanced Processor</li>
+                <li>Long-lasting Battery</li>
+                <li>Sleek Design</li>
+            </ul>
+        </p>
+        <p>Price: $299.99</p>
+    </div>
+
+    <p>This paragraph is outside the div, demonstrating how the div created a distinct block above it.</p>
+
+    <!--
+        Another div to group contact information.
+        Each div will naturally stack vertically.
+    -->
+    <div>
+        <h3>Contact Information</h3>
+        <p>
+            Email: info@example.com<br>
+            Phone: 555-123-4567<br>
+            Address: 123 Web Dev Lane, HTML City
+        </p>
+    </div>
+
+    <hr>
+
+    <h2>Using &lt;span&gt; for Inline-Level Grouping</h2>
+    <p>
+        A `&lt;span&gt;` is an inline-level element. This means it does *not* start on a new line and only takes up
+        as much width as its content requires. It's perfect for grouping small phrases or words within a line of text.
+    </p>
+
+    <p>
+        This sentence contains some <span style="font-weight: bold;">important information</span>
+        that is wrapped in a `&lt;span&gt;` element. Notice how it flows seamlessly within the paragraph.
+    </p>
+
+    <p>
+        Here's a list of items:
+        <ul>
+            <li>Item 1: <span style="font-style: italic;">Available</span></li>
+            <li>Item 2: <span style="text-decoration: underline;">Out of Stock</span></li>
+            <li>Item 3: <span style="color: green;">On Order</span></li>
+        </ul>
+        (Note: The `style` attribute is used here just to make the span effect visible in pure HTML, but in real development, you'd use CSS classes.)
+    </p>
+
+    <p>
+        The `&lt;span&gt;` tag is often used to apply styling to a <span style="background-color: yellow;">specific part of text</span>
+        without affecting the layout of the surrounding content. It's very versatile for fine-grained control.
+    </p>
+
+</body>
+</html>

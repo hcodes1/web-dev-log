@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Inline Elements Demo</title>
+    <meta name="description" content="An HTML-only visual demonstration of how block-level and inline-level elements render by default in a web browser.">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+
+    <h1>Block vs. Inline: A Visual Guide</h1>
+
+    <p>
+        This page serves as a visual guide to the core difference between block-level and inline-level elements in HTML.
+        This behavior is dictated by the browser's default stylesheet and is fundamental to how webpages are structured.
+    </p>
+
+    <hr> <!-- A horizontal rule for visual separation -->
+
+    <h2>Block-Level Elements</h2>
+    <p>
+        Block-level elements always occupy their own line. They stretch to fill the entire width of their container and create vertical space (margins) above and below them.
+    </p>
+
+    <!-- The <h1> tag is a block element -->
+    <h1>I am a block-level heading.</h1>
+
+    <!-- The <p> tag is a block element -->
+    <p>I am a block-level paragraph.</p>
+
+    <!-- The <ul> and <li> tags are block elements -->
+    <ul>
+        <li>I am a block-level list item.</li>
+        <li>I am another block-level list item.</li>
+    </ul>
+
+    <!-- The <address> tag is a block element -->
+    <address>
+        123 HTML Street<br>
+        Webville, Anytown<br>
+        USA
+    </address>
+
+    <!-- The <pre> tag is a block element -->
+    <pre>
+        This is preformatted text.
+        It respects whitespace and is a block element.
+    </pre>
+
+    <hr>
+
+    <h2>Inline-Level Elements</h2>
+    <p>
+        Inline-level elements do not start on a new line. They only take up as much width and height as their content requires, and they flow along with the text on the same line.
+    </p>
+
+    <p>
+        This sentence contains an inline link: <a href="#">This is a link (`&lt;a&gt;`).</a>
+        Notice how it sits on the same line as the surrounding text.
+    </p>
+
+    <p>
+        You can also see an inline image: <img src="https://placehold.co/100x60/cccccc/000000?text=IMG" alt="Small Placeholder Image">.
+        The image flows with the text just like a word would.
+    </p>
+
+    <p>
+        Here, we have some text with <strong>strong emphasis (`&lt;strong&gt;`)</strong> and <em>emphasis (`&lt;em&gt;`)</em>,
+        both of which are also inline elements.
+    </p>
+
+    <p>
+        A generic inline container like `&lt;span&gt;` is used here to wrap a <span style="font-weight: bold;">specific phrase</span>
+        without disrupting the flow of the entire paragraph.
+    </p>
+
+    <p>
+        We can also use `<code>` to display <code>inline code</code> like this.
+    </p>
+
+</body>
+</html>
