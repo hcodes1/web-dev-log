@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article and Aside Demo</title>
+    <meta name="description" content="An HTML-only demonstration of how to use the specific semantic elements, <article> and <aside>, for blog-style content and related sidebars.">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+
+    <h1>Blog Posts and Sidebar Content</h1>
+
+    <p>
+        This page demonstrates how to use the `<article>` tag for self-contained, independent content like blog posts,
+        and the `<aside>` tag for content that is related but separate, such as a sidebar.
+    </p>
+
+    <hr>
+
+    <main>
+        <!--
+            The <article> element is used for content that is a self-contained composition.
+            This could be a blog post, a news story, a forum post, or a user-submitted comment.
+            It should make sense on its own, even if taken out of the context of the rest of the page.
+            Each article should typically have a heading (e.g., <h2>).
+        -->
+        <article>
+            <h2>The Importance of Semantic HTML</h2>
+            <p>
+                Semantic HTML is not just for developers; it's also for browsers, search engines, and assistive technologies.
+                By using tags like `<header>`, `<nav>`, `<main>`, and `<article>`, we provide a clear structure that helps everyone understand the content's purpose.
+            </p>
+            <p>
+                Instead of using a generic `<div>` for a blog post, using `<article>` makes it clear that the content is a standalone entry.
+                This is crucial for accessibility and can help with search engine optimization (SEO).
+            </p>
+            <p>
+                Published on: <time datetime="2025-08-02">August 2, 2025</time>
+            </p>
+        </article>
+
+        <article>
+            <h2>A Quick Guide to CSS Flexbox</h2>
+            <p>
+                CSS Flexbox is a one-dimensional layout method for arranging items in rows or columns. It makes it easier to design flexible, responsive layout structures without using floats or positioning.
+            </p>
+            <p>
+                With flexbox, you can easily align items vertically and horizontally, distribute space, and change the order of elements, even on different screen sizes.
+            </p>
+            <p>
+                Published on: <time datetime="2025-07-28">July 28, 2025</time>
+            </p>
+        </article>
+
+    </main>
+
+    <!--
+        The <aside> element represents a portion of a document whose content is only indirectly related
+        to the document's main content. It is most often presented as a sidebar or a call-out box.
+        In a blog context, this is a perfect use case for "popular posts" or an "author bio."
+    -->
+    <aside>
+        <h3>Popular Posts</h3>
+        <ul>
+            <li><a href="#">Getting Started with HTML</a></li>
+            <li><a href="#">JavaScript Fundamentals</a></li>
+            <li><a href="#">Intro to CSS Grid</a></li>
+        </ul>
+
+        <h3>Author Bio</h3>
+        <p>
+            Jane Doe is a passionate web developer and educator. She loves sharing her knowledge of semantic HTML and modern CSS techniques.
+        </p>
+    </aside>
+
+</body>
+</html>

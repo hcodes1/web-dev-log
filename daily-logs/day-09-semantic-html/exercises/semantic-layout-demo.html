@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Layout Demo</title>
+    <meta name="description" content="An HTML-only demonstration of a page structured with semantic elements like header, nav, main, section, and footer.">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+
+    <!--
+        The <header> element is for introductory content, typically containing
+        the main heading, logo, and navigation links.
+    -->
+    <header>
+        <h1>My Awesome Website</h1>
+        <!--
+            The <nav> element represents a section of a page whose purpose is to provide navigation links.
+        -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+        The <main> element represents the dominant content of the <body> of a document.
+        There should only be one <main> element per document.
+    -->
+    <main>
+        <!--
+            The <section> element represents a standalone section of content,
+            which doesn't have a more specific semantic element to represent it.
+            It is typically used with a heading element (h1-h6).
+        -->
+        <section>
+            <h2>Welcome to Our Site!</h2>
+            <p>
+                This is the main content area of the webpage. We use a `<section>` to group a thematic piece of content.
+            </p>
+            <p>
+                Here, we're talking about the purpose of our website and what you can find here.
+            </p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <!--
+                The <article> element represents a self-contained composition in a document,
+                page, application, or site, which is intended to be independently distributable or reusable.
+                Here, each service is treated as a self-contained article.
+            -->
+            <article>
+                <h3>Web Design</h3>
+                <p>We create beautiful, responsive, and user-friendly websites from scratch.</p>
+            </article>
+
+            <article>
+                <h3>Web Development</h3>
+                <p>We build robust, scalable, and secure web applications tailored to your needs.</p>
+            </article>
+        </section>
+
+        <!--
+            The <aside> element represents a portion of a document whose content is
+            only indirectly related to the document's main content.
+            It's often presented as a sidebar.
+        -->
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">Blog Post 1</a></li>
+                <li><a href="#">Blog Post 2</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!--
+        The <footer> element represents a footer for its nearest sectioning content
+        (e.g., the whole document, or an article, or a section).
+        It typically contains copyright information, contact info, and secondary links.
+    -->
+    <footer>
+        <p>&copy; 2025 Semantic Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
