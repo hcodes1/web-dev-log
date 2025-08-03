@@ -25,7 +25,7 @@ Here you'll find direct links to the daily logs for quick access to specific day
 * **[Day 7: Form Actions & Validation (July 31, 2025)](daily-logs/day-07-form-actions-validation/README.md)**
 * **[Day 8: Layout & Structure Fundamentals (August 1, 2025)](daily-logs/day-08-layout-structure/README.md)**
 * **[Day 9: Semantic HTML (August 2, 2025)](daily-logs/day-09-semantic-html/README.md)**
-* Day 10: Tables & Scientific Element
+* **[Day 10: Tables & Scientific Element (August 3, 2025)](daily-logs/day-10-tables-scientific/README.md)**
 * Day 11: Project Work & Final Review
 
 ## 🌐 My Portfolio Project 

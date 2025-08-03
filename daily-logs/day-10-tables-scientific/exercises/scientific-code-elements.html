@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific and Code Elements Demo</title>
+    <meta name="description" content="An HTML-only demonstration of superscript (sup), subscript (sub), inline code (code), and preformatted code blocks (pre with code).">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+
+    <h1>Exploring Specialized Text Formatting in HTML</h1>
+
+    <h2>Scientific Notation with Superscript and Subscript</h2>
+    <p>
+        The famous mathematical equation for Einstein's mass-energy equivalence is E=mc<sup>2</sup>.
+        Here, '2' is rendered as a superscript, indicating an exponent.
+    </p>
+    <p>
+        Chemical formulas frequently use subscript to denote the number of atoms. For example, the chemical formula for water is H<sub>2</sub>O, and for sulfuric acid, it's H<sub>2</sub>SO<sub>4</sub>.
+    </p>
+    <p>
+        Footnotes often use superscript numbers, like in this sentence<sup>1</sup>, to refer to a citation or additional information.
+    </p>
+
+    <h2>Displaying Code Snippets</h2>
+    <p>
+        When referring to an inline piece of code, the `<code>` tag is used. For instance, to declare a variable in JavaScript, you might write `let myVariable = 10;`.
+        Another common inline code snippet is for HTML tags, like the `&lt;p&gt;` tag or the `&lt;a href=""&gt;` attribute.
+    </p>
+    <p>
+        For larger blocks of code, especially where whitespace and line breaks are important, you combine the `<pre>` tag with the `<code>` tag. The `<pre>` tag preserves preformatted text, while `<code>` semantically marks it as code.
+    </p>
+
+    <pre><code>
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+
+greet("World"); // This calls the function
+    </code></pre>
+
+    <p>
+        This ensures the code's indentation and line breaks are preserved, making it easy to read.
+        Another example could be a simple CSS rule:
+    </p>
+    <pre><code>
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+    </code></pre>
+
+</body>
+</html>
