@@ -45,7 +45,7 @@ What an achievement to complete the HTML phase of my portfolio project! It's rew
 * No challenges everything runs smoothly.
 
 **Next Steps:**
-* Begin the CSS portion of the course.
+* Begin the CSS portion of the log.
 * Start planning the visual design for my portfolio.
 * Continue the daily Git commit habit!
 
